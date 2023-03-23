@@ -1,11 +1,11 @@
-import './App.css';
-import { Home } from './atomic/pages';
-import FormControlado from './components/FormControlado';
-import FormHook from './components/FormHook/FormHook';
+import './App.css'
+import { Home } from './atomic/pages'
+// import FormControlado from './components/FormControlado'
+// import FormHook from './components/FormHook/FormHook'
 
-function App() {
+function App () {
   return (
-    <div className='App'>
+    <div className="App">
       {/* <FormControlado /> */}
       {/* <br />
       <hr />
@@ -14,7 +14,7 @@ function App() {
 
       <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

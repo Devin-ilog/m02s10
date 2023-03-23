@@ -1,9 +1,9 @@
-import { Admin } from '../../templates';
+import { Admin } from '../../templates'
 
 export const Home = () => {
   return (
-    <Admin title='Lista de produtos'>
+    <Admin title="Lista de produtos">
       <p>Teste</p>
     </Admin>
-  );
-};
+  )
+}

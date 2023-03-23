@@ -1,4 +1,4 @@
-import { Label, Input } from '../../atoms';
+import { Label, Input } from '../../atoms'
 
 export const InputGroup = ({ label, inputProps }) => {
   return (
@@ -7,5 +7,5 @@ export const InputGroup = ({ label, inputProps }) => {
 
       <Input {...inputProps} />
     </>
-  );
-};
+  )
+}

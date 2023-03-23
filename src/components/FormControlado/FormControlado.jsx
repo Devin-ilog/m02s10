@@ -1,17 +1,17 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
-function FormControlado() {
+function FormControlado () {
   const [formValues, setFormValues] = useState({
     login: '',
     senha: '',
-    nome: '',
-  });
+    nome: ''
+  })
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
-    alert(JSON.stringify(formValues));
-  };
+    alert(JSON.stringify(formValues))
+  }
 
   const handleChange = (event) => {
     // const name = event.target.name;
@@ -24,55 +24,55 @@ function FormControlado() {
     //   };
     // });
 
-    const { name, value } = event.target;
+    const { name, value } = event.target
 
     setFormValues((sapato) => ({
       ...sapato,
-      [name]: value,
-    }));
-  };
+      [name]: value
+    }))
+  }
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor='nome'>Nome</label>
+        <label htmlFor="nome">Nome</label>
         <input
-          id='nome'
-          name='nome'
-          type='text'
-          placeholder='Nome'
+          id="nome"
+          name="nome"
+          type="text"
+          placeholder="Nome"
           value={formValues.nome}
           onChange={handleChange}
         />
       </div>
 
       <div>
-        <label htmlFor='login'>Login</label>
+        <label htmlFor="login">Login</label>
         <input
-          id='login'
-          name='login'
-          type='text'
-          placeholder='Login'
+          id="login"
+          name="login"
+          type="text"
+          placeholder="Login"
           value={formValues.login}
           onChange={handleChange}
         />
       </div>
 
       <div>
-        <label htmlFor='senha'>Senha</label>
+        <label htmlFor="senha">Senha</label>
         <input
-          id='senha'
-          name='senha'
-          type='password'
-          placeholder='Senha'
+          id="senha"
+          name="senha"
+          type="password"
+          placeholder="Senha"
           value={formValues.senha}
           onChange={handleChange}
         />
       </div>
 
-      <button type='submit'>Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
-  );
+  )
 }
 
-export default FormControlado;
+export default FormControlado

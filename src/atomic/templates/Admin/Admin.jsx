@@ -1,4 +1,4 @@
-import { Search } from '../../organisms';
+import { Search } from '../../organisms'
 
 export const Admin = ({ children, title }) => {
   return (
@@ -9,5 +9,5 @@ export const Admin = ({ children, title }) => {
 
       {children}
     </>
-  );
-};
+  )
+}

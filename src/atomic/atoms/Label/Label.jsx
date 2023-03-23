@@ -1,5 +1,5 @@
-import './Label.css';
+import './Label.css'
 
 export const Label = ({ text }) => {
-  return <label className='label'>{text}</label>;
-};
+  return <label className="label">{text}</label>
+}

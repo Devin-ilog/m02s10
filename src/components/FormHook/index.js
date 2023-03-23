@@ -1,1 +1,1 @@
-export { default } from './FormHook';
+export { default } from './FormHook'
